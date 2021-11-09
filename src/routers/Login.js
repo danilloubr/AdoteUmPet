@@ -85,14 +85,14 @@ function Login() {
 
   /*este Id é para levar para a pagina de edição o pet específico */
   const handleNavigationEditId = (id) => {
-    history.push(`/login/${id}`);
+    history.push(`/editpet/${id}`);
   };
 
   /*este Id é para levar para a pagina de adoção o pet específico */
   const handleNavigationEditAdopted = (id) => {
     history.push(`/editadopted/${id}`);
   };
-  
+
   /*useState para mudança de valor da tabela de pets*/
   const [tabela, setTabela] = useState();
 
@@ -103,7 +103,6 @@ function Login() {
   /*useState para abrir e fechar modal*/
   const [modalCadastroOpen, setModalCadastroOpen] = useState(false);
   const [modalDeletarOpen, setModalDeletarOpen] = useState(false);
-
 
   /*função para deslogar usuário*/
   function goLogout() {
@@ -127,7 +126,6 @@ function Login() {
   function handleCloseModalCadastro() {
     setModalCadastroOpen(false);
   }
-
 
   /*useEffect para carregar a listagem de pets na tabela*/
   useEffect(() => {
@@ -178,7 +176,7 @@ function Login() {
     }
   };
 
-/*mudar o valor do evento do input*/
+  /*mudar o valor do evento do input*/
   const handleChangeEspecie = (event) => {
     setEspecie(event.target.value);
   };
@@ -187,8 +185,7 @@ function Login() {
     setSexo(event.target.value);
   };
 
-
-/*tabela, tabela mobile, modal*/
+  /*tabela, tabela mobile, modal*/
   return (
     <Fragment>
       <section className="pagina-total">
