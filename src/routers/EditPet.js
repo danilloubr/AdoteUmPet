@@ -49,7 +49,7 @@ function EditPet() {
   const customStyles = {
 
     overlay: {
-      position: "fixed",
+      position: "initial !impotant",
       inset: "0px",
       backgroundColor: "rgba(255, 255, 255, 0.75)",
       display: "flex",

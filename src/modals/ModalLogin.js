@@ -12,7 +12,6 @@ import { toast } from "react-toastify";
 import "../styles/LoginModal.css";
 
 function ModalLogin() {
-
   /* contexto para*/
   const { login } = useContext(AuthContext);
 
@@ -22,7 +21,7 @@ function ModalLogin() {
   /*useForm para pegar dados dos campos de login*/
   const { register, handleSubmit } = useForm();
 
-/*função para fazer login*/
+  /*função para fazer login*/
   const onSubmit = async (data) => {
     try {
       const {
