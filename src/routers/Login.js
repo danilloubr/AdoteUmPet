@@ -56,7 +56,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 /* estilização do modal*/
 const customStyles = {
   overlay: {
-    position: "initial !impotant",
+    position: "fixed",
     inset: "0px",
     backgroundColor: "rgba(255, 255, 255, 0.75)",
     display: "flex",
@@ -64,9 +64,8 @@ const customStyles = {
     justifyContent: "center",
   },
   content: {
-    top: "",
-    bottom: "500px",
-    border: "100px",
+    position: "initial",
+    inset: "0px",
     WebkitOverflowScrolling: "touch",
     borderRadius: "10px",
     animation: "slidedown 1s ease, go-back 1s infinite alternate",

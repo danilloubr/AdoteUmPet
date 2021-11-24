@@ -49,27 +49,20 @@ function EditPet() {
   const customStyles = {
 
     overlay: {
-      position: "initial !impotant",
+      position: "fixed",
       inset: "0px",
       backgroundColor: "rgba(255, 255, 255, 0.75)",
       display: "flex",
       alignItems: "center",
-      justifyContent: "center"
+      justifyContent: "center",
     },
     content: {
-
-      
-      top: "",
-      bottom: "500px",
-      left: "",
-      right: "",
-      border: "100px",
-
+      position: "initial",
+      inset: "0px",
       WebkitOverflowScrolling: "touch",
       borderRadius: "10px",
-      boxShadow:" 3px 8px 17px -1px rgba(0,0,0,0.73)",
       animation: "slidedown 1s ease, go-back 1s infinite alternate",
-      padding: "0px",
+      padding: "20px 15px",
       backgroundColor: "transparent",
     },
   };
